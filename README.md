@@ -1,6 +1,6 @@
 # CSC690FinalApp
 
-StillWater
+Stillwater
 
 Collaborators:
 Josue Carreon - j0sue98
