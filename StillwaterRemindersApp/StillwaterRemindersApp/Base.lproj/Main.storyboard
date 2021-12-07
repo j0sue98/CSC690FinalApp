@@ -17,8 +17,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Ih-gu-EIP">
-                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="7m8-n9-unh" detailTextLabel="Lo9-ja-Hey" style="IBUITableViewCellStyleSubtitle" id="EKy-ci-Eq4">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EKy-ci-Eq4" id="ZSP-WS-NCi">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7m8-n9-unh">
+                                                    <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lo9-ja-Hey">
+                                                    <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -58,7 +84,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dy0-Wj-cKD">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dy0-Wj-cKD">
                                 <rect key="frame" x="10" y="54" width="394" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="4nj-tl-7L9"/>
@@ -66,21 +92,38 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-so-Ahb">
-                                <rect key="frame" x="142" y="303" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-so-Ahb">
+                                <rect key="frame" x="10" y="126" width="394" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="rXR-jl-3IC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="N1a-e5-H9w">
+                                <rect key="frame" x="10" y="188" width="414" height="664"/>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Few-Au-s2x"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="dy0-Wj-cKD" firstAttribute="leading" secondItem="Few-Au-s2x" secondAttribute="leading" constant="10" id="72P-7c-53e"/>
                             <constraint firstItem="dy0-Wj-cKD" firstAttribute="top" secondItem="Few-Au-s2x" secondAttribute="top" constant="10" id="7aS-Cu-Zj3"/>
+                            <constraint firstItem="fFg-so-Ahb" firstAttribute="leading" secondItem="Few-Au-s2x" secondAttribute="leading" constant="10" id="Ctg-25-RXV"/>
                             <constraint firstItem="Few-Au-s2x" firstAttribute="trailing" secondItem="dy0-Wj-cKD" secondAttribute="trailing" constant="10" id="Gwb-4C-byn"/>
+                            <constraint firstItem="fFg-so-Ahb" firstAttribute="top" secondItem="dy0-Wj-cKD" secondAttribute="bottom" constant="20" id="Jn6-7E-mIO"/>
+                            <constraint firstItem="Few-Au-s2x" firstAttribute="trailing" secondItem="fFg-so-Ahb" secondAttribute="trailing" constant="10" id="PP3-tI-Jv6"/>
+                            <constraint firstItem="N1a-e5-H9w" firstAttribute="leading" secondItem="Few-Au-s2x" secondAttribute="leading" constant="10" id="TMH-hh-2UD"/>
+                            <constraint firstItem="N1a-e5-H9w" firstAttribute="trailing" secondItem="Few-Au-s2x" secondAttribute="trailing" constant="10" id="X2H-xW-FAB"/>
+                            <constraint firstItem="Few-Au-s2x" firstAttribute="bottom" secondItem="N1a-e5-H9w" secondAttribute="bottom" constant="10" id="nnc-Ky-ycC"/>
+                            <constraint firstItem="N1a-e5-H9w" firstAttribute="top" secondItem="fFg-so-Ahb" secondAttribute="bottom" constant="10" id="vSr-Fu-Blb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bodyField" destination="fFg-so-Ahb" id="jh0-iy-f7X"/>
+                        <outlet property="datePicker" destination="N1a-e5-H9w" id="XYQ-SM-9DA"/>
+                        <outlet property="titleField" destination="dy0-Wj-cKD" id="S5h-2Q-JGK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JNe-HL-6a5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,6 +154,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -61,11 +61,11 @@
 				CA019CAC275AE2080053F8A0 /* AppDelegate.swift */,
 				CA019CAE275AE2080053F8A0 /* SceneDelegate.swift */,
 				CA019CB0275AE2080053F8A0 /* ViewController.swift */,
+				CA019CC2275AFD030053F8A0 /* AddViewController.swift */,
 				CA019CB2275AE2080053F8A0 /* Main.storyboard */,
 				CA019CB5275AE20A0053F8A0 /* Assets.xcassets */,
 				CA019CB7275AE20A0053F8A0 /* LaunchScreen.storyboard */,
 				CA019CBA275AE20A0053F8A0 /* Info.plist */,
-				CA019CC2275AFD030053F8A0 /* AddViewController.swift */,
 			);
 			path = StillwaterRemindersApp;
 			sourceTree = "<group>";
