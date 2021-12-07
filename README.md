@@ -17,4 +17,4 @@ Optional Features
   - Users can register/sign in
   - Reminders can be categorized by color
   - Filter reminders by keywords or color
-  - Users can add higher priotrity to certain reminders
+  - Users can add higher priority to certain reminders
