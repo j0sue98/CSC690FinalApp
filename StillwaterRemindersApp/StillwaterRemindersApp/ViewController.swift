@@ -34,12 +34,18 @@ class ViewController: UIViewController {
         return button
     }()
     
+    private func configureItems() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .edit, target: self, action: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(floatingButton)
         floatingButton.addTarget(self, action: #selector(didTapAdd), for: .touchUpInside)
         table.delegate = self
         table.dataSource = self
+        configureItems()
     }
     
     override func viewDidLayoutSubviews() {
@@ -51,7 +57,8 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func didTapAdd() {
+    
+    @objc func didTapAdd() {
         //show add vc
         guard let vc = storyboard?.instantiateViewController(identifier: "add") as? AddViewController else {
             return
@@ -95,6 +102,11 @@ class ViewController: UIViewController {
                 print("Error occurred")
             }
         })
+    }
+    
+    @objc func didTapEdit() {
+        let vc = ViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func scheduleTest(){
