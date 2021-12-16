@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         view.addSubview(floatingButton)
         floatingButton.addTarget(self, action: #selector(didTapAdd), for: .touchUpInside)
         table.delegate = self
-        table.delegate = self
+        table.dataSource = self
     }
     
     override func viewDidLayoutSubviews() {
