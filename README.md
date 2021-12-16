@@ -18,3 +18,8 @@ Optional Features
   - Reminders can be categorized by color
   - Filter reminders by keywords or color
   - Users can add higher priority to certain reminders
+
+To Run The App
+  - Clone the repo into XCode
+  - Open the StillwaterRemindersApp.xcodeproj
+  - Once the project is opened in XCode, press Command + R to build and run
